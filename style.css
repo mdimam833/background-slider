@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-auto-rows: 600px;
+    justify-content: center;
+    align-content: center;
+}
+.slider {
+    border : 3px solid black;
+    border-radius: 10px;
+    background: url(img/food.jpg) no-repeat center / 100% 100%;
+    animation: slider 10s linear 1s infinite;
+}
+@keyframes slider {
+    25% {
+        background: url(img/food.jpg) no-repeat center / 100% 100%;
+    }
+    50% {
+        background: url(img/food1.jpg) no-repeat center / 100% 100%;
+    }
+    75% {
+        background: url(img/pexels-julie-aagaard-2097090.jpg) no-repeat center / 100% 100%;
+    }
+    100% {
+        background: url(img/pexels-lisa-1279330.jpg) no-repeat center / 100% 100%;
+    }
+}
